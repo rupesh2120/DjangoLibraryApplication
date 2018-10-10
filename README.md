@@ -154,6 +154,20 @@ Now, create a Heroku app using heroku create:
 And then deploy the app:
 
     git push heroku master
+    
+Migrate database
+
+    heroku run python manage.py migrate
+
+Create admin/superuser
+
+    heroku run python manage.py createsuperuser
+    >Username [enter your username]
+    >Password [enter your password]
+
+Run server
+
+    heroku run python manage.py runserver
 
 Finally, you can use the Heroku CLI to view the app in your browser:
 
